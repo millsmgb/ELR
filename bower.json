@@ -1,0 +1,23 @@
+{
+  "name": "learning-card-mockup",
+  "authors": [
+    "Marcus Paxton <marcus.a.paxton@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "paper-elements": "PolymerElements/paper-elements#^1.0.7",
+    "iron-swipeable-container": "PolymerElements/iron-swipeable-container#^1.0.2"
+  }
+}

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+    
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- endbuild-->
+    
+	<title>Musical jars</title>
+	<link rel="import" href="../bower_components/paper-card/paper-card.html">
+	<link rel="import" href="../bower_components/paper-badge/paper-badge.html">
+	<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+	<link rel="import" href="../bower_components/paper-button/paper-button.html">
+	<link rel="import" href="../bower_components/font-roboto/font-roboto.html">
+	<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+	<link rel="import" href="../bower_components/iron-icons/device-icons.html">
+	<link rel="import" href="../bower_components/paper-dialog/paper-dialog.html">
+	<link rel="import" href="../bower_components/iron-swipeable-container/iron-swipeable-container.html">
+	<link rel="import" href="../bower_components/paper-tooltip/paper-tooltip.html">
+	<link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html">
+	<script src="../bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+
+  </head>
+  <body>
+	  
+	<!--Activity Cards-->
+	
+	<style is="custom-style" include="iron-flexiron-flex-alignment">
+		paper-card.white { --paper-card-header-color: #fff; 
+		
+			--paper-card-header-text: {
+				@apply(--layout-vertical);
+				@apply(--layout-center);
+				font-size:45px;
+				text-align:center;
+				align:center;
+				margin:auto;
+				width:100%;
+				text-shadow: 2px 2px #000;
+			};            
+		
+		}
+		.learning-light { color: var(--paper-grey-600);}
+		paper-card {
+			box-sizing: border-box;
+			margin:auto;
+			margin-bottom: 100px;
+			flex: 0 0 auto;
+			max-width:600px;
+			
+			--paper-card: {
+				@apply(--layout-vertical);
+			};
+			
+			--paper-card-header-text: {
+				text-align:center;
+				font-size:45px;
+				align:center;
+				margin:auto;
+				width:100%;
+			}; 
+		
+			--paper-card-actions: {
+				@apply(--layout-vertical);
+				@apply(--layout-center);
+			};
+			--paper-card-header: {
+				@apply(--layout-vertical);
+				@apply(--layout-center);
+			};
+		}
+		
+		paper-icon-button.orange {
+			color:red;
+		}
+
+	</style>
+
+	<iron-swipeable-container swipe-style="horizontal">
+		<paper-card heading="Musical jars" elevation="3">
+			<div class="card-actions">
+				<div class="learning-light layout horizontal wrap">
+					<h3>Cover Card</h3>
+					<img src="../images/musicalJars/cover.JPG" style="max-width:100%;">
+				</div>
+			</div>
+			<div class="card-actions">
+			<div class="learning-light layout horizontal wrap">
+				<paper-icon-button icon="icons:face" id="age"></paper-icon-button>
+				<paper-icon-button icon="device:signal-cellular-1-bar" id="prep"></paper-icon-button>
+				<paper-icon-button src="../symbols/brain.svg" id="cognitive"></paper-icon-button>
+				<paper-icon-button src="../symbols/shape.svg" id="sensory"></paper-icon-button>
+				<paper-icon-button src="../symbols/people.svg" id="emotional"></paper-icon-button>
+			</div>
+			</div>
+			<div class="card-content">
+			<div class="learning-desc">
+				<p>My little one just loved everything about this activity - the water play, the sound making
+                    and the colour changing!
+                </p>
+			</div>
+			</div>
+			<section onclick="clickHandler(event)">
+			<div class="card-actions">
+				<div class="layout horizontal justified">
+					<paper-item id="icon-button-elements" center-center>
+					<paper-icon-button icon="icons:label-outline" data-dialog="Milestones" id="milestones"></paper-icon-button>
+					
+					<paper-icon-button icon="icons:help-outline" data-dialog="DidYouKnow" id="didyouknow"></paper-icon-button>
+					<paper-icon-button icon="icons:lightbulb-outline" data-dialog="Tips" id="tips"></paper-icon-button>
+					<paper-icon-button icon="icons:add-circle-outline" data-dialog="Extension" id="extensions"></paper-icon-button>
+					</paper-item>
+				</div>
+			</div>
+			</section>
+		</paper-card>
+
+		<paper-card heading="Musical jars" elevation="3">
+			<div class="card-actions">
+				<div class="learning-light layout horizontal wrap">
+					<h3>Materials</h3>
+					<img src="../images/musicalJars/materials.JPG" style="max-width:100%;">
+				</div>
+			</div>
+			<div class="card-actions">
+			<div class="learning-light layout horizontal wrap">
+				<paper-icon-button icon="icons:face" id="age"></paper-icon-button>
+				<paper-icon-button icon="device:signal-cellular-1-bar" id="prep"></paper-icon-button>
+				<paper-icon-button src="../symbols/brain.svg" id="cognitive"></paper-icon-button>
+				<paper-icon-button src="../symbols/shape.svg" id="sensory"></paper-icon-button>
+				<paper-icon-button src="../symbols/people.svg" id="emotional"></paper-icon-button>
+			</div>
+			</div>
+			<div class="card-content">
+			<div class="learning-desc">
+				<ul>
+					<li>Clean glass jars</li>
+					<li>Metal and plastic cutlery</li>
+					<li>Water</li>
+					<li>Food colouring (optional)</li>
+				</ul>
+			</div>
+			</div>
+			<section onclick="clickHandler(event)">
+			<div class="card-actions">
+				<div class="layout horizontal justified">
+					<paper-item id="icon-button-elements" center-center>
+					<paper-icon-button icon="icons:label-outline" data-dialog="Milestones" id="milestones"></paper-icon-button>
+					
+					<paper-icon-button icon="icons:help-outline" data-dialog="DidYouKnow" id="didyouknow"></paper-icon-button>
+					<paper-icon-button icon="icons:lightbulb-outline" data-dialog="Tips" id="tips"></paper-icon-button>
+					<paper-icon-button icon="icons:add-circle-outline" data-dialog="Extension" id="extensions"></paper-icon-button>
+					</paper-item>
+				</div>
+			</div>
+			</section>
+		</paper-card>
+		
+		<paper-card heading="Musical jars" elevation="3">
+			<div class="card-actions">
+				<div class="learning-light layout horizontal wrap">
+					<h3>Step 1</h3>
+					<img src="../images/musicalJars/step1.JPG" style="max-width:100%;">
+				</div>
+			</div>
+			<div class="card-actions">
+			<div class="learning-light layout horizontal wrap">
+				<paper-icon-button icon="icons:face" id="age"></paper-icon-button>
+				<paper-icon-button icon="device:signal-cellular-1-bar" id="prep"></paper-icon-button>
+				<paper-icon-button src="../symbols/brain.svg" id="cognitive"></paper-icon-button>
+				<paper-icon-button src="../symbols/shape.svg" id="sensory"></paper-icon-button>
+				<paper-icon-button src="../symbols/people.svg" id="emotional"></paper-icon-button>
+			</div>
+			</div>
+			<div class="card-content">
+			<div class="learning-desc">
+				<p>
+				Ask your child to tap each piece of cutlery in turn against the glass jars. Which material
+                made the clearest sound, plastic or metal?
+				</p>
+			</div>
+			</div>
+			<section onclick="clickHandler(event)">
+			<div class="card-actions">
+				<div class="layout horizontal justified">
+					<paper-item id="icon-button-elements" center-center>
+					<paper-icon-button icon="icons:label-outline" data-dialog="Milestones" id="milestones"></paper-icon-button>
+					
+					<paper-icon-button icon="icons:help-outline" data-dialog="DidYouKnow" id="didyouknow"></paper-icon-button>
+					<paper-icon-button icon="icons:lightbulb-outline" data-dialog="Tips" id="tips"></paper-icon-button>
+					<paper-icon-button icon="icons:add-circle-outline" data-dialog="Extension" id="extensions"></paper-icon-button>
+					</paper-item>
+				</div>
+			</div>
+			</section>
+		</paper-card>
+		
+		<paper-card heading="Musical jars" elevation="3">
+			<div class="card-actions">
+				<div class="learning-light layout horizontal wrap">
+					<h3>Step 2</h3>
+					<img src="../images/musicalJars/step2.JPG" style="max-width:100%;">
+				</div>
+			</div>
+			<div class="card-actions">
+			<div class="learning-light layout horizontal wrap">
+				<paper-icon-button icon="icons:face" id="age"></paper-icon-button>
+				<paper-icon-button icon="device:signal-cellular-1-bar" id="prep"></paper-icon-button>
+				<paper-icon-button src="../symbols/brain.svg" id="cognitive"></paper-icon-button>
+				<paper-icon-button src="../symbols/shape.svg" id="sensory"></paper-icon-button>
+				<paper-icon-button src="../symbols/people.svg" id="emotional"></paper-icon-button>
+			</div>
+			</div>
+			<div class="card-content">
+			<div class="learning-desc">
+				<p>
+					Ask what might happen to the sound if we poured water into the jars. Let your child pour water
+                    into the jars, leaving one empty.
+				</p>
+			</div>
+			</div>
+			<section onclick="clickHandler(event)">
+			<div class="card-actions">
+				<div class="layout horizontal justified">
+					<paper-item id="icon-button-elements" center-center>
+					<paper-icon-button icon="icons:label-outline" data-dialog="Milestones" id="milestones"></paper-icon-button>
+					
+					<paper-icon-button icon="icons:help-outline" data-dialog="DidYouKnow" id="didyouknow"></paper-icon-button>
+					<paper-icon-button icon="icons:lightbulb-outline" data-dialog="Tips" id="tips"></paper-icon-button>
+					<paper-icon-button icon="icons:add-circle-outline" data-dialog="Extension" id="extensions"></paper-icon-button>
+					</paper-item>
+				</div>
+			</div>
+			</section>
+		</paper-card>
+		
+		<paper-card heading="Musical jars" elevation="3">
+			<div class="card-actions">
+				<div class="learning-light layout horizontal wrap">
+					<h3>Step 3</h3>
+					<img src="../images/musicalJars/step3.JPG" style="max-width:100%;">
+				</div>
+			</div>
+			<div class="card-actions">
+			<div class="learning-light layout horizontal wrap">
+				<paper-icon-button icon="icons:face" id="age"></paper-icon-button>
+				<paper-icon-button icon="device:signal-cellular-1-bar" id="prep"></paper-icon-button>
+				<paper-icon-button src="../symbols/brain.svg" id="cognitive"></paper-icon-button>
+				<paper-icon-button src="../symbols/shape.svg" id="sensory"></paper-icon-button>
+				<paper-icon-button src="../symbols/people.svg" id="emotional"></paper-icon-button>
+			</div>
+			</div>
+			<div class="card-content">
+			<div class="learning-desc">
+				<p>
+					Test the sound again with the cutlery of choice. Do the jars with water sound any different to the 
+                    ones that don't?
+				</p>
+			</div>
+			</div>
+			<section onclick="clickHandler(event)">
+			<div class="card-actions">
+				<div class="layout horizontal justified">
+					<paper-item id="icon-button-elements" center-center>
+					<paper-icon-button icon="icons:label-outline" data-dialog="Milestones" id="milestones"></paper-icon-button>
+					
+					<paper-icon-button icon="icons:help-outline" data-dialog="DidYouKnow" id="didyouknow"></paper-icon-button>
+					<paper-icon-button icon="icons:lightbulb-outline" data-dialog="Tips" id="tips"></paper-icon-button>
+					<paper-icon-button icon="icons:add-circle-outline" data-dialog="Extension" id="extensions"></paper-icon-button>
+					</paper-item>
+				</div>
+			</div>
+			</section>
+		</paper-card>
+		
+		<paper-card heading="Musical jars" elevation="3">
+			<div class="card-actions">
+				<div class="learning-light layout horizontal wrap">
+					<h3>Step 4</h3>
+					<img src="../images/musicalJars/step4.JPG" style="max-width:100%;">
+				</div>
+			</div>
+			<div class="card-actions">
+			<div class="learning-light layout horizontal wrap">
+				<paper-icon-button icon="icons:face" id="age"></paper-icon-button>
+				<paper-icon-button icon="device:signal-cellular-1-bar" id="prep"></paper-icon-button>
+				<paper-icon-button src="../symbols/brain.svg" id="cognitive"></paper-icon-button>
+				<paper-icon-button src="../symbols/shape.svg" id="sensory"></paper-icon-button>
+				<paper-icon-button src="../symbols/people.svg" id="emotional"></paper-icon-button>
+			</div>
+			</div>
+			<div class="card-content">
+			<div class="learning-desc">
+				<p>
+					At this point, my little one added colouring using food colouring because the effect is just
+                    beautiful.
+				</p>
+			</div>
+			</div>
+			<section onclick="clickHandler(event)">
+			<div class="card-actions">
+				<div class="layout horizontal justified">
+					<paper-item id="icon-button-elements" center-center>
+					<paper-icon-button icon="icons:label-outline" data-dialog="Milestones" id="milestones"></paper-icon-button>
+					
+					<paper-icon-button icon="icons:help-outline" data-dialog="DidYouKnow" id="didyouknow"></paper-icon-button>
+					<paper-icon-button icon="icons:lightbulb-outline" data-dialog="Tips" id="tips"></paper-icon-button>
+					<paper-icon-button icon="icons:add-circle-outline" data-dialog="Extension" id="extensions"></paper-icon-button>
+					</paper-item>
+				</div>
+			</div>
+			</section>
+		</paper-card>
+	
+	</iron-swipeable-container>
+	
+	<paper-button style="padding-top:50px; margin:auto; width:100%;">
+        <a href="../activities.html">Click here to do more fun activities!</a>    
+    </paper-button>
+	
+	<!--Modal Content-->
+	
+	<paper-dialog id="Milestones" modal>
+		<h2>Milestones</h2>
+		<paper-checkbox><strong>Motor Skill Development</strong></paper-checkbox>
+		<p>Fine motor skills: Holding implement using a pincer grip (using forefinger and thumb)
+		</p>
+		<paper-checkbox><strong>Cognitive Development</strong></paper-checkbox>
+		<p>S.T.E.A.M: Asking questions and hypothesising why something has occured</p>
+		<div class="buttons">
+		<paper-button dialog-confirm autofocus>Tap me to close</paper-button>
+		</div>
+	</paper-dialog>
+	<!--
+	<paper-dialog id="Domains" modal>
+		<h2>Domain Skills</h2>
+		<p>Fun, tactile activities like this can generate an interest in science and how things work,
+		and help develop bilateral coordination.
+		</p>
+		<p><strong>Fine motor skills</strong></p>
+		<ul>
+		<li>Holding the string</li>
+		<li>Picking up the slippery ice</li>
+		<li>Sprinkling the salt</li>
+		</ul>
+		<p><strong>Cognitive</strong></p>
+		<ul>
+		<li>Thinking about the cause and effect</li>
+		<li>Forming and testing a hypothesis</li>
+		<li>Coming to an observable conclusion</li>
+		</ul>
+		<div class="buttons">
+		<paper-button dialog-confirm autofocus>Tap me to close</paper-button>
+		</div>
+	</paper-dialog>
+	-->
+	<paper-dialog id="Extension" modal>
+		<h2>Extend it</h2>
+		<p>To explore further how sound travles, you can provide different types of materials for your child
+            to wrap the jars in e.g. foil, thin/thick fabric, etc.
+        </p>
+		<div class="buttons">
+		<paper-button dialog-confirm autofocus>Tap me to close</paper-button>
+		</div>
+	</paper-dialog>
+
+	<paper-dialog id="DidYouKnow" modal>
+		<h2>Did you Know?</h2>
+		<p><strong>Sound Waves</strong></p>
+		<p>Did you know that sound travels through air at 340m per second? Sound can also travel through water and in fact
+            moves four times faster through water than air! Sound can travel such long distances that whales can hear
+            each other hundreds of kilometres apart.
+		</p>
+		<div class="buttons">
+		<paper-button dialog-confirm autofocus>Tap me to close</paper-button>
+		</div>
+	</paper-dialog>
+
+	<paper-dialog id="Tips" modal>
+		<h2>Tips</h2>
+		<p>If you don't want to use your cutlery, use any other metal or plastic object that is easy for your child
+            to hold and tap against jars.
+		</p>
+		<div class="buttons">
+		<paper-button dialog-confirm autofocus>Tap me to close</paper-button>
+		</div>
+	</paper-dialog>
+
+	<!--Tooltips-->
+
+	<paper-tooltip for="age">Age</paper-tooltip>
+	<paper-tooltip for="prep">Prep time</paper-tooltip>
+	<paper-tooltip for="cognitive">Cognitive Domain</paper-tooltip>
+	<paper-tooltip for="sensory">Sensory Motor Domain</paper-tooltip>
+	<paper-tooltip for="emotional">Social Emotional Domain</paper-tooltip>
+	<paper-tooltip for="milestones">Milestones</paper-tooltip>
+	<paper-tooltip for="domains">Domains</paper-tooltip>
+	<paper-tooltip for="tips">Tips</paper-tooltip>
+	<paper-tooltip for="extensions">Extensions</paper-tooltip>
+	<paper-tooltip for="didyouknow">Did You Know?</paper-tooltip>
+
+	<script>
+		function clickHandler(e) {
+		var button = e.target;
+		while (!button.hasAttribute('data-dialog') && button !== document.body) {
+			button = button.parentElement;
+		}
+		if (!button.hasAttribute('data-dialog')) {
+			return;
+		}
+		var id = button.getAttribute('data-dialog');
+		var dialog = document.getElementById(id);
+		if (dialog) {
+			dialog.open();
+		}
+		}
+	</script>
+  </body>
+</html>

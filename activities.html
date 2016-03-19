@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<title>Activities</title>
+	
+	 <!-- build:css styles/main.css -->
+	<link rel="stylesheet" href="styles/main.css">
+	<!-- endbuild-->
+	
+	<!--Pure CSS grid-->
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+
+	
+	<link rel="import" href="../bower_components/paper-card/paper-card.html">
+	<link rel="import" href="../bower_components/paper-badge/paper-badge.html">
+	<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+	<link rel="import" href="../bower_components/paper-button/paper-button.html">
+	<link rel="import" href="../bower_components/font-roboto/font-roboto.html">
+	<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+	<link rel="import" href="../bower_components/iron-icons/device-icons.html">
+	<link rel="import" href="../bower_components/paper-dialog/paper-dialog.html">
+	<link rel="import" href="../bower_components/iron-swipeable-container/iron-swipeable-container.html">
+	<link rel="import" href="../bower_components/paper-tooltip/paper-tooltip.html">
+	<link rel="import" href="./bower_components/paper-checkbox/paper-checkbox.html">
+	<script src="../bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+
+  </head>
+  <body>
+	 
+	<h1 style="text-align:center">Activities</h1>
+	
+	<!--Activity Cards-->
+	
+	<style is="custom-style" include="iron-flexiron-flex-alignment">
+		paper-card.white { --paper-card-header-color: #fff; 
+		
+			--paper-card-header-text: {
+				@apply(--layout-vertical);
+				@apply(--layout-center);
+				font-size:45px;
+				text-align:center;
+				align:center;
+				margin:auto;
+				width:100%;
+				text-shadow: 2px 2px #000;
+			};            
+		
+		}
+		.learning-light { color: var(--paper-grey-600);}
+		paper-card {
+			box-sizing: border-box;
+			margin:10%;
+			flex: 0 0 auto;
+			max-width:600px;
+			
+			--paper-card: {
+				@apply(--layout-vertical);
+			};
+			
+			--paper-card-header-text: {
+				text-align:center;
+				font-size:45px;
+				align:center;
+				margin:auto;
+				width:100%;
+			}; 
+		
+			--paper-card-actions: {
+				@apply(--layout-vertical);
+				@apply(--layout-center);
+			};
+			--paper-card-header: {
+				@apply(--layout-vertical);
+				@apply(--layout-center);
+			};
+		}
+		
+		paper-icon-button.orange {
+			color:red;
+		}
+
+	</style>
+	
+	<div class="pure-g">
+		<div class="pure-u-1 pure-u-md-1-2">
+			<paper-card heading="Ice on a string" elevation="3">
+				<div class="card-actions">
+					<div class="learning-light layout horizontal wrap">
+						<a href="Activities/iceAct.html">
+							<img src="images/photo.jpg" style="max-width:100%;">
+						</a>
+					</div>
+				</div>
+				<div class="card-actions">
+				<div class="learning-light layout horizontal wrap">
+					<paper-icon-button icon="icons:face" id="age"></paper-icon-button>
+					<paper-icon-button icon="device:signal-cellular-1-bar" id="prep"></paper-icon-button>
+					<paper-icon-button src="symbols/brain.svg" id="cognitive"></paper-icon-button>
+					<paper-icon-button src="symbols/shape.svg" id="sensory"></paper-icon-button>
+					<paper-icon-button src="symbols/people.svg" id="emotional"></paper-icon-button>
+				</div>
+				</div>
+				<div class="card-content">
+				<div class="learning-desc">
+					<p>This activity combines the things little ones love: ice, water, and a touch of wonder!</p>
+				</div>
+				</div>
+			</paper-card>
+	   </div>
+	   <div class="pure-u-1 pure-u-md-1-2">
+			<paper-card heading="Musical jars" elevation="3">
+				<div class="card-actions">
+					<div class="learning-light layout horizontal wrap">
+						<a href="Activities/musicalJars.html">
+							<img src="images//musicalJars/cover.JPG" style="max-width:100%;">
+						</a>
+					</div>
+				</div>
+				<div class="card-actions">
+				<div class="learning-light layout horizontal wrap">
+					<paper-icon-button icon="icons:face" id="age"></paper-icon-button>
+					<paper-icon-button icon="device:signal-cellular-1-bar" id="prep"></paper-icon-button>
+					<paper-icon-button src="../symbols/brain.svg" id="cognitive"></paper-icon-button>
+					<paper-icon-button src="../symbols/shape.svg" id="sensory"></paper-icon-button>
+					<paper-icon-button src="../symbols/people.svg" id="emotional"></paper-icon-button>
+				</div>
+				</div>
+				<div class="card-content">
+				<div class="learning-desc">
+					<p>My little one just loved this activity - the water play, the sound making
+						and the colour changing!
+					</p>
+				</div>
+				</div>
+			</paper-card>
+	   </div>
+
+	</div>
+
+  </body>
+</html>

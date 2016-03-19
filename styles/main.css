@@ -1,0 +1,71 @@
+/*
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+*/
+
+body {
+  background: #fafafa;
+  font-family: 'Century Gothic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page-title {
+  outline: none;
+}
+
+ul {
+  margin-left: 5%;
+}
+
+.swipe {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+.learningBox {
+    width:80%;
+    background-color: #FFF;
+    margin:auto;
+    padding:5%;
+    text-align:center;
+}
+
+.learningBox ul {
+    text-align: left;
+}
+
+#navigator {
+    width: 100%;
+    padding: 0;
+    height: 14px;
+    z-index: 999;
+}
+#navigator a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    text-indent: -999em;
+    background: #fff;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 0 0 1px 1px #707173;
+    margin-right: 10px;
+}
+#navigator a {
+    background: #FFF;
+}
+#navigator a.activeSlide {
+    background: #00ffff;
+}
