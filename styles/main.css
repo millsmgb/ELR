@@ -87,6 +87,25 @@ ul {
 }
 
 paper-dialog {
-    height:50%;
     width:75%;
+}
+
+paper-dialog p {
+    font-size: 28px;
+    line-height:150%;
+}
+
+paper-dialog h2 {
+    font-size: 36px !important;
+    line-height: 150% !important;
+}
+
+paper-dialog li {
+    font-size: 28px;
+    margin-bottom: 50px;
+    line-height:150%;
+}
+
+paper-dialog paper-checkbox {
+    font-size: 28px;
 }
