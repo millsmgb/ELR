@@ -58,16 +58,25 @@ ul {
     padding-left:5%;
     padding-right:5%;
     height:200px;
+
 }
 
 .learning-desc p {
    font-size:28px;
+   
 }
 
-.learning-desc li {
+.pure-g li {
     font-size:28px;
     line-height: 150%;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif !important;
 }
+
+.pure-g .learning-desc p {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif !important;
+
+}
+
 
 #navigator {
     width: 100%;
