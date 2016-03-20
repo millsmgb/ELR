@@ -49,21 +49,11 @@ ul {
     width:80%;
     background-color: #FFF;
     margin:auto;
-    padding:5%;
     text-align:center;
+    padding:5%;
     
 }
 
-.learningBox p {
-    padding:10px;
-    font-size:30px;
-}
-
-.learningBox ul {
-    text-align: left;
-    font-size:28px;
-    padding:5px;
-}
 
 .learning-desc {
     padding-left:5%;
@@ -148,12 +138,32 @@ paper-dialog paper-checkbox {
 }
 
 .bigContainer {
-    height:600px;
+    height:700px;
+    padding-left:5%;
+    padding-right:5%;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif !important;
 }
 
-.medContainer {
-    height:450px;
+.pure-g .bigContainer p{
+    font-size:40px;
+    line-height: 150%;
+}
 
+.pure-g .bigContainer li {
+    font-size:40px;
+    line-height: 150%;
+    text-align: left;
+}
+
+
+.medContainer {
+    height:300px;
+}
+
+.medContainer img {
+    align:centre;
+    margin:auto;
+    padding-top:20%;
 }
 
 .smallContainer {
