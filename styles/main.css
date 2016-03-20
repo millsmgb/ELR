@@ -9,7 +9,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 body {
   background: #fafafa;
-  font-family: 'Century Gothic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif !important;
   color: #333;
 }
 
@@ -61,6 +61,11 @@ ul {
    font-size:28px;
 }
 
+.learning-desc li {
+    font-size:28px;
+    line-height: 150%;
+}
+
 #navigator {
     width: 100%;
     padding: 0;
@@ -88,6 +93,8 @@ ul {
 
 paper-dialog {
     width:75%;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif !important;
+
 }
 
 paper-dialog p {
@@ -109,3 +116,4 @@ paper-dialog li {
 paper-dialog paper-checkbox {
     font-size: 28px;
 }
+
