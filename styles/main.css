@@ -57,6 +57,7 @@ ul {
 .learning-desc {
     padding-left:5%;
     padding-right:5%;
+    height:300px;
 }
 
 .learning-desc p {
