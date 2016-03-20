@@ -55,8 +55,8 @@ ul {
 }
 
 .learningBox p {
-    padding:5px;
-    font-size:28px;
+    padding:10px;
+    font-size:30px;
 }
 
 .learningBox ul {
@@ -148,11 +148,11 @@ paper-dialog paper-checkbox {
 }
 
 .bigContainer {
-    height:300px;
+    height:600px;
 }
 
 .medContainer {
-    height:250px;
+    height:450px;
 
 }
 
