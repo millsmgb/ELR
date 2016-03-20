@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<title>Learnings</title>
+	
+	 <!-- build:css styles/main.css -->
+	<link rel="stylesheet" href="../styles/main.css">
+	<!-- endbuild-->
+	
+	<!--Pure CSS grid-->
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+	<!--header scripts - really bad form, just for demo day -->
+	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="../scripts/dragend.min.js"></script>
+	
+	<link rel="import" href="../bower_components/paper-card/paper-card.html">
+	<link rel="import" href="../bower_components/paper-badge/paper-badge.html">
+	<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+	<link rel="import" href="../bower_components/paper-button/paper-button.html">
+	<link rel="import" href="../bower_components/font-roboto/font-roboto.html">
+	<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+	<link rel="import" href="../bower_components/iron-icons/device-icons.html">
+	<link rel="import" href="../bower_components/paper-dialog/paper-dialog.html">
+	<link rel="import" href="../bower_components/iron-swipeable-container/iron-swipeable-container.html">
+	<link rel="import" href="../bower_components/paper-tooltip/paper-tooltip.html">
+	<link rel="import" href="./bower_components/paper-checkbox/paper-checkbox.html">
+	<script src="../bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+
+  </head>
+  <body>
+	
+	<!--Learning Cards-->
+	
+	<style is="custom-style" include="iron-flexiron-flex-alignment">
+		.learning-light { color: var(--paper-grey-600);}
+		paper-card {
+			box-sizing: border-box;
+			margin:5%;
+			flex: 0 0 auto;
+			
+			font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif !important;
+			
+			--paper-card: {
+				@apply(--layout-vertical);
+			};
+			
+		
+			--paper-card-actions: {
+				@apply(--layout-vertical);
+				@apply(--layout-center);
+			};
+			--paper-card-header: {
+				@apply(--layout-vertical);
+				@apply(--layout-center);
+			};
+	   
+		}
+		paper-card.lime {
+				--paper-card-background-color: #b4e673;
+		}
+
+	</style>
+		
+    <paper-card class="lime" elevation="3" id="p6">
+        <div class="card-title">
+            <h1>Executive Function</h1>
+        </div>
+        <div class="card-content">
+            <div class="learningBox">
+                <div class="pure-g">
+                    <div class="pure-u-1">
+                        <div class="medContainer">
+                            <h1 style="font-size:36px;">AREAS TO LOOK AT</h1>
+                        </div>
+                    </div>
+                    <div class="pure-u-1">
+                        <div class="bigContainer">
+                            <span>
+                                <div class="pure-u-1" style="border-style:solid; padding:10px;">
+                                    <paper-button style="font-size:28px;"><a href="../Learnings/executiveFunctionOne.html">What is executive function?</a></paper-button>
+                                    <p style="font-size:18px;text-align:right"><strong>2 MINUTE READ     5 CARDS</strong></p>
+                                </div>
+                                <div class="pure-u-1" style="border-style:solid; padding:10px;">
+                                    <paper-button style="font-size:28px;"><a href="../Learnings/executiveFunctionTwo.html">Why is it important to develop?</a></paper-button>
+                                    <p style="font-size:18px;text-align:right"><strong>2 MINUTE READ     7 CARDS</strong></p>
+                                </div>
+                                <div class="pure-u-1" style="border-style:solid; padding:10px;">
+                                    <paper-button style="font-size:28px;"><a href="../Learnings/executiveFunctionThree.html">How can I help my child develop it?</a></paper-button>
+                                    <p style="font-size:18px;text-align:right"><strong>3 MINUTE READ     9 CARDS</strong></p>                            
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="pure-u-1">
+                        <div class="smallContainer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-content">
+            </div>
+        </div>
+    </paper-card>
+        
+  </body>
+</html>
