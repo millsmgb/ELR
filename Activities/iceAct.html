@@ -86,11 +86,6 @@
 		<paper-card heading="Ice On A String" elevation="3">
 			<div class="card-actions">
 				<div class="pure-g">
-							<div class="pure-u-2-3">
-								<div class="learning-light layout horizontal wrap">
-									<p style="font-size:28px;">Cover Card</p>
-								</div>
-							</div>
 							<div class="pure-u-1-6" style="text-align:center">
 								<paper-icon-button src="../symbols/baby.svg" id="age"></paper-icon-button>
 								<p style="font-size:14px;">3 year+</p>
@@ -99,6 +94,11 @@
 								<paper-icon-button src="../symbols/bars1.png" id="prep"></paper-icon-button>
 								<p style="font-size:14px;">Prep Time</p>
 							</div>
+							<div class="pure-u-2-3" style="text-align:right;">
+								<div class="learning-light layout horizontal wrap">
+									<p style="font-size:28px;">Cover Card</p>
+								</div>
+							</div>
 
 				</div>
 		
@@ -106,46 +106,48 @@
 			<div class="card-content">
 				<img src="../images/photo.jpg" style="max-width:100%;">
 			</div>
-			<div class="card-domains">
-				<div class="learning-light layout horizontal wrap">
-					<div class="pure-g" style="text-align:center">
-						<div class="pure-u-1-3">
-							<paper-icon-button src="../symbols/brain.svg" data-dialog="cognitive"></paper-icon-button>
-							<p style="font-size:14px">Cognitive</p>
-						</div>
-						<div class="pure-u-1-3">
-							<paper-icon-button src="../symbols/shape.svg" data-dialog="sensory"></paper-icon-button>
-							<p style="font-size:14px">Sensory - Motor</p>
-						</div>
-						<div class="pure-u-1-3">
-							<paper-icon-button src="../symbols/heartsInHand.svg" data-dialog="emotional" class="inactive"></paper-icon-button>
-							<p style="font-size:14px; opacity:0.25;">Social - Emotional</p>
+			<section onclick="clickHandler(event)">
+				<div class="card-actions">
+					<div class="learning-light layout horizontal wrap">
+						<div class="pure-g" style="text-align:center">
+							<div class="pure-u-1-3">
+								<paper-icon-button src="../symbols/brain.svg" data-dialog="Cognitive"></paper-icon-button>
+								<p style="font-size:14px">Cognitive</p>
+							</div>
+							<div class="pure-u-1-3">
+								<paper-icon-button src="../symbols/shape.svg" data-dialog="Sensory"></paper-icon-button>
+								<p style="font-size:14px">Sensory - Motor</p>
+							</div>
+							<div class="pure-u-1-3">
+								<paper-icon-button src="../symbols/heartsInHand.svg" data-dialog="Emotional" class="inactive"></paper-icon-button>
+								<p style="font-size:14px; opacity:0.25;">Social - Emotional</p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 			<div class="card-content">
 				<div class="learning-desc">
 					<p>This activity combines the things little ones love: ice, water, and a touch of wonder!</p>
 				</div>
 			</div>
 			<section onclick="clickHandler(event)">
-			<div class="card-actions">
-				<div class="pure-g" style="text-align:center">
-					<div class="pure-u-1-4">
-						<paper-icon-button src="../symbols/checkBox.svg" data-dialog="Milestones" id="milestones"></paper-icon-button>
-					</div>
-					<div class="pure-u-1-4">
-						<paper-icon-button icon="icons:help-outline" data-dialog="DidYouKnow" id="didyouknow"></paper-icon-button>
-					</div>
-					<div class="pure-u-1-4">
-						<paper-icon-button icon="icons:lightbulb-outline" data-dialog="Tips" id="tips"></paper-icon-button>
-					</div>
-					<div class="pure-u-1-4">
-						<paper-icon-button icon="icons:add-circle-outline" data-dialog="Extension" id="extensions"></paper-icon-button>
+				<div class="card-actions">
+					<div class="pure-g" style="text-align:center">
+						<div class="pure-u-1-4">
+							<paper-icon-button src="../symbols/checkBox.svg" data-dialog="Milestones"></paper-icon-button>
+						</div>
+						<div class="pure-u-1-4">
+							<paper-icon-button icon="icons:help-outline" data-dialog="DidYouKnow"></paper-icon-button>
+						</div>
+						<div class="pure-u-1-4">
+							<paper-icon-button icon="icons:lightbulb-outline" data-dialog="Tips"></paper-icon-button>
+						</div>
+						<div class="pure-u-1-4">
+							<paper-icon-button icon="icons:add-circle-outline" data-dialog="Extension"></paper-icon-button>
+						</div>
 					</div>
 				</div>
-			</div>
 			</section>
 		</paper-card>
 
@@ -409,29 +411,31 @@
 		<paper-button dialog-confirm autofocus>Tap me to close</paper-button>
 		</div>
 	</paper-dialog>
-	<!--
-	<paper-dialog id="Domains" modal>
-		<h2>Domain Skills</h2>
-		<p>Fun, tactile activities like this can generate an interest in science and how things work,
-		and help develop bilateral coordination.
-		</p>
-		<p><strong>Fine motor skills</strong></p>
+
+	<paper-dialog id="Sensory" modal>
+		<h2>Sensory - Motor</h2>
 		<ul>
-		<li>Holding the string</li>
-		<li>Picking up the slippery ice</li>
-		<li>Sprinkling the salt</li>
+			<li>Holding the string</li>
+			<li>Picking up the slippery ice</li>
+			<li>Sprinkling the salt</li>
 		</ul>
-		<p><strong>Cognitive</strong></p>
+		<div class="buttons">
+			<paper-button dialog-confirm autofocus>Tap me to close</paper-button>
+		</div>
+	</paper-dialog>
+	
+	<paper-dialog id="Cognitive" modal>
+		<h2>Cognitive</h2>	
 		<ul>
-		<li>Thinking about the cause and effect</li>
-		<li>Forming and testing a hypothesis</li>
-		<li>Coming to an observable conclusion</li>
+			<li>Thinking about the cause and effect</li>
+			<li>Forming and testing a hypothesis</li>
+			<li>Coming to an observable conclusion</li>
 		</ul>
 		<div class="buttons">
 		<paper-button dialog-confirm autofocus>Tap me to close</paper-button>
 		</div>
 	</paper-dialog>
-	-->
+
 	<paper-dialog id="Extension" modal>
 		<h2>Extend it</h2>
 		<ul>
@@ -476,7 +480,7 @@
 	</paper-dialog>
 
 	<!--Tooltips-->
-
+	<!--
 	<paper-tooltip for="age">Age</paper-tooltip>
 	<paper-tooltip for="prep">Prep time</paper-tooltip>
 	<paper-tooltip for="cognitive">Cognitive Domain</paper-tooltip>
@@ -487,7 +491,7 @@
 	<paper-tooltip for="tips">Tips</paper-tooltip>
 	<paper-tooltip for="extensions">Extensions</paper-tooltip>
 	<paper-tooltip for="didyouknow">Did You Know?</paper-tooltip>
-
+	-->
 	<script>
 		function clickHandler(e) {
 		var button = e.target;

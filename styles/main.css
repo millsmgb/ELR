@@ -86,4 +86,7 @@ ul {
     background: #00ffff;
 }
 
-
+paper-dialog {
+    height:50%;
+    width:75%;
+}
