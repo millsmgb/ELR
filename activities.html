@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<title>Activities</title>
+	
+	 <!-- build:css styles/main.css -->
+	<link rel="stylesheet" href="styles/main.css">
+	<!-- endbuild-->
+	
+	<!--Pure CSS grid-->
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+
+	
+	<link rel="import" href="../bower_components/paper-card/paper-card.html">
+	<link rel="import" href="../bower_components/paper-badge/paper-badge.html">
+	<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+	<link rel="import" href="../bower_components/paper-button/paper-button.html">
+	<link rel="import" href="../bower_components/font-roboto/font-roboto.html">
+	<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+	<link rel="import" href="../bower_components/iron-icons/device-icons.html">
+	<link rel="import" href="../bower_components/paper-dialog/paper-dialog.html">
+	<link rel="import" href="../bower_components/iron-swipeable-container/iron-swipeable-container.html">
+	<link rel="import" href="../bower_components/paper-tooltip/paper-tooltip.html">
+	<link rel="import" href="./bower_components/paper-checkbox/paper-checkbox.html">
+	<script src="../bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+
+  </head>
+  <body>
+	 
+	<h1 style="text-align:center">Activities</h1>
+	
+	<!--Activity Cards-->
+	
+	<style is="custom-style" include="iron-flexiron-flex-alignment">
+		
+
+		
+		.learning-light { color: var(--paper-grey-600);}
+		paper-card {
+			
+			box-sizing: border-box;
+			margin:5%;
+			flex: 0 0 auto;
+			font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif !important;
+			
+			--paper-card: {
+				@apply(--layout-vertical);
+			};
+			
+		}
+		
+		paper-icon-button.inactive {
+			opacity:0.25;
+<<<<<<< HEAD
+=======
+		}
+		paper-icon-button {
+			height:84px;
+			width:84px;
+>>>>>>> e2b161ad851c77e439b7aa9eeaeab7ff5dab4409
+		}
+		paper-icon-button {
+			height:84px;
+			width:84px;
+		}
+
+
+
+	</style>
+	
+	<div class="pure-g">
+		<div class="pure-u-1 pure-u-lg-1-2">
+            <paper-card elevation="3">
+                <div class="card-title">
+                    <h1>Ice On A String</h1>
+                </div>
+                <div class="card-actions">
+                    <div class="pure-g">
+                                <div class="pure-u-1-2" style="text-align:center">
+                                    <paper-icon-button src="../symbols/baby.svg" id="age"></paper-icon-button>
+                                    <p style="font-size:20px;">3 year+</p>
+                                </div>
+                                <div class="pure-u-1-2" style="text-align:center">
+                                    <paper-icon-button src="../symbols/bars1.png" id="prep"></paper-icon-button>
+                                    <p style="font-size:20px;">Prep Time</p>
+                                </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <a href="Activities/iceAct.html"><img src="images/photo.jpg" style="max-width:100%;"></a>
+                </div>
+                <section onclick="clickHandler(event)">
+                    <div class="card-domains">
+                        <div class="learning-light layout horizontal wrap">
+                            <div class="pure-g" style="text-align:center">
+                                <div class="pure-u-1-3">
+                                    <paper-icon-button src="../symbols/brain.svg" data-dialog="Cognitive"></paper-icon-button>
+                                    <p style="font-size:14px">Cognitive</p>
+                                </div>
+                                <div class="pure-u-1-3">
+                                    <paper-icon-button src="../symbols/shape.svg" data-dialog="Sensory"></paper-icon-button>
+                                    <p style="font-size:14px">Sensory - Motor</p>
+                                </div>
+                                <div class="pure-u-1-3">
+                                    <paper-icon-button src="../symbols/heartsInHand.svg" data-dialog="Emotional" class="inactive"></paper-icon-button>
+                                    <p style="font-size:14px; opacity:0.25;">Social - Emotional</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="card-content">
+                    <div class="pure-g">
+                        <div class="learning-desc">
+                            <div class="pure-u-1">
+                                <p>This activity combines the things little ones love: ice, water, and a touch of wonder!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </paper-card>
+	   </div>
+	   <div class="pure-u-1 pure-u-lg-1-2">
+            <paper-card elevation="3">
+                <div class="card-title">
+                    <h1>Musical Jars</h1>
+                </div>
+                <div class="card-actions">
+                    <div class="pure-g">
+                                <div class="pure-u-1-2" style="text-align:center">
+                                    <paper-icon-button src="../symbols/baby.svg" id="age"></paper-icon-button>
+                                    <p style="font-size:20px;">3mo +</p>
+                                </div>
+                                <div class="pure-u-1-2" style="text-align:center">
+                                    <paper-icon-button src="../symbols/bars1.png" id="prep"></paper-icon-button>
+                                    <p style="font-size:20px;">Prep Time</p>
+                                </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <a href="Activities/musicalJars.html"><img src="images/musicalJars/cover.JPG" style="max-width:100%;"></a>
+                </div>
+                <section onclick="clickHandler(event)">
+                    <div class="card-domains">
+                        <div class="learning-light layout horizontal wrap">
+                            <div class="pure-g" style="text-align:center">
+                                <div class="pure-u-1-3">
+                                    <paper-icon-button src="../symbols/brain.svg" data-dialog="Cognitive"></paper-icon-button>
+                                    <p style="font-size:14px">Cognitive</p>
+                                </div>
+                                <div class="pure-u-1-3">
+                                    <paper-icon-button src="../symbols/shape.svg" data-dialog="Sensory"></paper-icon-button>
+                                    <p style="font-size:14px">Sensory - Motor</p>
+                                </div>
+                                <div class="pure-u-1-3">
+                                    <paper-icon-button src="../symbols/heartsInHand.svg" data-dialog="Emotional" class="inactive"></paper-icon-button>
+                                    <p style="font-size:14px; opacity:0.25;">Social - Emotional</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="card-content">
+                    <div class="pure-g">
+                        <div class="learning-desc">
+                            <div class="pure-u-1">
+                                <p>My little one just loved everything about this activity - the water play, the sound making
+                                    and the colour changing!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </paper-card>
+	   </div>
+       
+       <div class="pure-u-1 pure-u-lg-1-2">
+            <paper-card elevation="3">
+                <div class="card-title">
+                    <h1>Pool Noodle Colour Scramble</h1>
+                </div>
+                <div class="card-actions">
+                    <div class="pure-g">
+                                <div class="pure-u-1-2" style="text-align:center">
+                                    <paper-icon-button src="../symbols/baby.svg" id="age"></paper-icon-button>
+                                    <p style="font-size:20px;">18mo +</p>
+                                </div>
+                                <div class="pure-u-1-2" style="text-align:center">
+                                    <paper-icon-button src="../symbols/bars2.png" id="prep"></paper-icon-button>
+                                    <p style="font-size:20px;">Prep Time</p>
+                                </div>
+
+                    </div>
+            
+                </div>
+                <div class="card-content">
+                    <a href="Activities/poolNoodles.html"><img src="../images/poolNoodles/materials.jpg" style="max-width:100%;"></a>
+                </div>
+                <section onclick="clickHandler(event)">
+                    <div class="card-domains">
+                        <div class="learning-light layout horizontal wrap">
+                            <div class="pure-g" style="text-align:center">
+                                <div class="pure-u-1-3">
+                                    <paper-icon-button src="../symbols/brain.svg" data-dialog="Cognitive"></paper-icon-button>
+                                    <p style="font-size:14px">Cognitive</p>
+                                </div>
+                                <div class="pure-u-1-3">
+                                    <paper-icon-button src="../symbols/shape.svg" data-dialog="Sensory"></paper-icon-button>
+                                    <p style="font-size:14px">Sensory - Motor</p>
+                                </div>
+                                <div class="pure-u-1-3">
+                                    <paper-icon-button src="../symbols/heartsInHand.svg" data-dialog="Emotional" class="inactive"></paper-icon-button>
+                                    <p style="font-size:14px; opacity:0.25;">Social - Emotional</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="card-content">
+                    <div class="pure-g">
+                        <div class="learning-desc">
+                            <div class="pure-u-1">
+                                <p>Here’s a great way for your child to get active and hewn their numeracy skills at the same time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </paper-card>
+       </div>
+       
+       <div class="pure-u-1 pure-u-lg-1-2">
+            <paper-card elevation="3">
+<<<<<<< HEAD
+                <div class="card-title"">
+=======
+                <div class="card-title">
+>>>>>>> e2b161ad851c77e439b7aa9eeaeab7ff5dab4409
+                    <h1>Water Writing</h1>
+                </div>
+                <div class="card-actions">
+                    <div class="pure-g">
+                                <div class="pure-u-1-2" style="text-align:center">
+                                    <paper-icon-button src="../symbols/baby.svg" id="age"></paper-icon-button>
+                                    <p style="font-size:20px;">2yo +</p>
+                                </div>
+                                <div class="pure-u-1-2" style="text-align:center">
+                                    <paper-icon-button src="../symbols/bars1.png" id="prep"></paper-icon-button>
+                                    <p style="font-size:20px;">Prep Time</p>
+                                </div>
+
+                    </div>
+            
+                </div>
+                <div class="card-content">
+                    <a href="Activities/waterPainting.html"><img src="../images/waterPainting/cover.JPG" style="max-width:100%;"></a>
+                </div>
+                <section onclick="clickHandler(event)">
+                    <div class="card-domains">
+                        <div class="learning-light layout horizontal wrap">
+                            <div class="pure-g" style="text-align:center">
+                                <div class="pure-u-1-3">
+                                    <paper-icon-button src="../symbols/brain.svg" data-dialog="Cognitive"></paper-icon-button>
+                                    <p style="font-size:14px">Cognitive</p>
+                                </div>
+                                <div class="pure-u-1-3">
+                                    <paper-icon-button src="../symbols/shape.svg" data-dialog="Sensory" class="inactive"></paper-icon-button>
+                                    <p style="font-size:14px; opacity:0.25;">Sensory - Motor</p>
+                                </div>
+                                <div class="pure-u-1-3">
+                                    <paper-icon-button src="../symbols/heartsInHand.svg" data-dialog="Emotional" class="inactive"></paper-icon-button>
+                                    <p style="font-size:14px; opacity:0.25;">Social - Emotional</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+<<<<<<< HEAD
+                <div class="card-content"  style="height:220px;>
+=======
+                <div class="card-content">
+>>>>>>> e2b161ad851c77e439b7aa9eeaeab7ff5dab4409
+                    <div class="pure-g">
+                        <div class="learning-desc">
+                            <div class="pure-u-1">
+                                <p>This is a great activity to do outside because there will literally be no clean up at all. 
+                                    Just give your little one the brushes and water and let them go for it! If you’re inside, this works really well on a blackboard.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </paper-card>
+       </div>
+<<<<<<< HEAD
+       
+       <div class="pure-u-1 pure-u-lg-1-2">
+            <paper-card elevation="3">
+                    <div class="card-title">
+                        <h1>Guessing Jars</h1>
+                    </div>
+                    <div class="card-actions">
+                        <div class="pure-g">
+                                    <div class="pure-u-1-2" style="text-align:center">
+                                        <paper-icon-button src="../symbols/baby.svg" id="age"></paper-icon-button>
+                                        <p style="font-size:20px;">2yo +</p>
+                                    </div>
+                                    <div class="pure-u-1-2" style="text-align:center">
+                                        <paper-icon-button src="../symbols/bars1.png" id="prep"></paper-icon-button>
+                                        <p style="font-size:20px;">Prep Time</p>
+                                    </div>
+
+                        </div>
+                
+                    </div>
+                    <div class="card-content">
+                        <a href="Activities/guessingJars.html"><img src="../images/guessingJars/materials.JPG" style="max-width:100%;"></a>
+                    </div>
+                    <section onclick="clickHandler(event)">
+                        <div class="card-domains">
+                            <div class="learning-light layout horizontal wrap">
+                                <div class="pure-g" style="text-align:center">
+                                    <div class="pure-u-1-3">
+                                        <paper-icon-button src="../symbols/brain.svg" data-dialog="Cognitive"></paper-icon-button>
+                                        <p style="font-size:14px">Cognitive</p>
+                                    </div>
+                                    <div class="pure-u-1-3">
+                                        <paper-icon-button src="../symbols/shape.svg" data-dialog="Sensory" class="inactive"></paper-icon-button>
+                                        <p style="font-size:14px; opacity:0.25;">Sensory - Motor</p>
+                                    </div>
+                                    <div class="pure-u-1-3">
+                                        <paper-icon-button src="../symbols/heartsInHand.svg" data-dialog="Emotional" class="inactive"></paper-icon-button>
+                                        <p style="font-size:14px; opacity:0.25;">Social - Emotional</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="card-content">
+                        <div class="pure-g">
+                            <div class="learning-desc">
+                                <div class="pure-u-1">
+                                    <p>Little Ones love guessing games and squishing things into containers. This activity lets them do both to their hearts content!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+         </div>
+=======
+>>>>>>> e2b161ad851c77e439b7aa9eeaeab7ff5dab4409
+
+	</div>
+
+  </body>
+</html>
