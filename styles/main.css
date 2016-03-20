@@ -53,6 +53,10 @@ ul {
     padding:5px;
 }
 
+.learning-desc {
+    padding:5%;
+}
+
 .learning-desc p {
    font-size:28px;
 }
