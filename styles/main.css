@@ -12,7 +12,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
    
     paper-card {
 
-        width:700px;
+        max-width:700px;
     };
 
     
@@ -51,7 +51,7 @@ ul {
     margin:auto;
     padding:5%;
     text-align:center;
-    height: 600px;
+    
 }
 
 .learningBox p {
@@ -68,7 +68,7 @@ ul {
 .learning-desc {
     padding-left:5%;
     padding-right:5%;
-    height:150px;
+    height:100px;
 
 }
 
@@ -97,13 +97,13 @@ ul {
 }
 #navigator a {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     text-indent: -999em;
     background: #fff;
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
     box-shadow: 0 0 1px 1px #707173;
     margin-right: 10px;
 }
@@ -111,7 +111,7 @@ ul {
     background: #FFF;
 }
 #navigator a.activeSlide {
-    background: #00ffff;
+    background: #707173;
 }
 
 paper-dialog {
@@ -142,9 +142,21 @@ paper-dialog paper-checkbox {
 
 .card-title {
     text-align:center;
-    font-size:40px;
-    align:center;
-    margin:auto;
+    font-size:36px;
     width:100%;
     font-weight:bold;
+}
+
+.bigContainer {
+    height:300px;
+}
+
+.medContainer {
+    height:250px;
+
+}
+
+.smallContainer {
+    height:50px;
+
 }
