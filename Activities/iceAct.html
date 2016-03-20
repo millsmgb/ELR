@@ -44,13 +44,18 @@
 		.learning-light { color: var(--paper-grey-600);}
 		paper-card {
 			box-sizing: border-box;
-			margin:auto;
-			margin-bottom: 100px;
+			margin:5%;
+			
 			flex: 0 0 auto;
-			max-width:600px;
+			max-width:700px;
+			
 			
 			--paper-card: {
 				@apply(--layout-vertical);
+			};
+
+			--paper-card-content: {
+				font-size:28px;
 			};
 			
 			--paper-card-header-text: {
@@ -59,11 +64,15 @@
 				align:center;
 				margin:auto;
 				width:100%;
+ 				font-weight:bold;
 			}; 
 		
 			--paper-card-actions: {
 				@apply(--layout-vertical);
 				@apply(--layout-center);
+				
+	                   
+
 			};
 			--paper-card-header: {
 				@apply(--layout-vertical);
@@ -74,22 +83,31 @@
 		paper-icon-button.orange {
 			color:red;
 		}
+		paper-icon-button {
+			height:72px;
+			width:72px;
+			padding-right:10px;
+		}
 
 	</style>
 
 	<iron-swipeable-container swipe-style="horizontal">
-		<paper-card heading="Ice on a string" elevation="3">
+		<paper-card heading="Ice On A String" elevation="3">
 			<div class="card-actions">
 				<div class="learning-light layout horizontal wrap">
 					<h3>Cover Card</h3>
-					<img src="../images/photo.jpg" style="max-width:100%;">
+					<div id="age">
+
+						<span><paper-icon-button icon="icons:face" id="age"></paper-icon-button></span>
+						<span><h3>3+</h3></span>
+					</div>
+					<paper-icon-button icon="device:signal-cellular-1-bar" id="prep"></paper-icon-button>
+					<img src="../images/photo.jpg" style="max-height:400px; max-width:100%;">
 				</div>
 			</div>
 			<div class="card-actions">
 			<div class="learning-light layout horizontal wrap">
-				<paper-icon-button icon="icons:face" id="age"></paper-icon-button>
-				<paper-icon-button icon="device:signal-cellular-1-bar" id="prep"></paper-icon-button>
-				<paper-icon-button src="../symbols/brain.svg" id="cognitive"></paper-icon-button>
+				<paper-icon-button src="../symbols/brain.svg" id="cognitive" style="opacity:0.25"></paper-icon-button>
 				<paper-icon-button src="../symbols/shape.svg" id="sensory"></paper-icon-button>
 				<paper-icon-button src="../symbols/people.svg" id="emotional"></paper-icon-button>
 			</div>
@@ -114,7 +132,7 @@
 			</section>
 		</paper-card>
 
-		<paper-card heading="Ice on a string" elevation="3">
+		<paper-card heading="Ice on a String" elevation="3">
 			<div class="card-actions">
 				<div class="learning-light layout horizontal wrap">
 					<h3>Materials</h3>
@@ -137,7 +155,7 @@
 					<li>Water</li>
 					<li>Salt</li>
 					<li>String</li>
-					<li>Scissors</li>
+					<li>Pen</li>
 					<li>Small bowl</li>
 				</ul>
 			</div>
