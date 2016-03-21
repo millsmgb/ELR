@@ -6,6 +6,8 @@
 	
 	 <!-- build:css styles/main.css -->
 	<link rel="stylesheet" href="styles/main.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
 	<!-- endbuild-->
 	
 	<!--Pure CSS grid-->
@@ -30,6 +32,19 @@
 
   </head>
   <body>
+     <header>
+        <div class="container-fluid">
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+            <a href="/"><img src="images/home.png"></a>
+        </div>
+           
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-5 pull-right right-header">
+            <a href="#"><img src="images/search-icon.png"></a>
+            <a href="#"><img src="images/user.png"></a>
+        </div>
+            <div class="clearfix"></div>
+        </div>
+    </header>
 	 
 	<h1 style="text-align:center">Activities</h1>
 	
@@ -55,13 +70,10 @@
 		
 		paper-icon-button.inactive {
 			opacity:0.25;
-<<<<<<< HEAD
-=======
 		}
 		paper-icon-button {
 			height:84px;
 			width:84px;
->>>>>>> e2b161ad851c77e439b7aa9eeaeab7ff5dab4409
 		}
 		paper-icon-button {
 			height:84px;
@@ -250,7 +262,7 @@
             
                 </div>
                 <div class="card-content">
-                    <a= href"Activities/waterPainting.html><img src="images/waterPainting/cover.JPG" style="max-width:100%;"></a>
+                    <a href = "Activities/waterPainting.html"><img src="images/waterPainting/cover.JPG" style="max-width:100%;"></a>
                 </div>
                 <section onclick="clickHandler(event)">
                     <div class="card-domains">
