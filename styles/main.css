@@ -174,8 +174,8 @@ paper-dialog paper-checkbox {
 .home-button {
     z-index:5;
     position:absolute;
-    top:5px;
-    left:5px;
+    top:50px;
+    left:50px;
 }
 
 .home-button paper-icon-button {
