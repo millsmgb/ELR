@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+    
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- endbuild-->
+    
+	<title>Ice on a string</title>
+	<link rel="import" href="../bower_components/paper-card/paper-card.html">
+	<link rel="import" href="../bower_components/paper-badge/paper-badge.html">
+	<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+	<link rel="import" href="../bower_components/paper-button/paper-button.html">
+	<link rel="import" href="../bower_components/font-roboto/font-roboto.html">
+	<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+	<link rel="import" href="../bower_components/iron-icons/device-icons.html">
+	<link rel="import" href="../bower_components/paper-dialog/paper-dialog.html">
+	<link rel="import" href="../bower_components/iron-swipeable-container/iron-swipeable-container.html">
+	<link rel="import" href="../bower_components/paper-tooltip/paper-tooltip.html">
+	<link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html">
+	<script src="../bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+
+  </head>
+  <body>
+	  
+	<!--Activity Cards-->
+	
+	<style is="custom-style" include="iron-flexiron-flex-alignment">
+		paper-card.white { --paper-card-header-color: #fff; 
+		
+			--paper-card-header-text: {
+				@apply(--layout-vertical);
+				@apply(--layout-center);
+				font-size:45px;
+				text-align:center;
+				align:center;
+				margin:auto;
+				width:100%;
+				text-shadow: 2px 2px #000;
+			};            
+		
+		}
+		.learning-light { color: var(--paper-grey-600);}
+		paper-card {
+			box-sizing: border-box;
+			margin:5%;
+			
+			flex: 0 0 auto;
+			max-width:700px;
+			
+			
+			--paper-card: {
+				@apply(--layout-vertical);
+			};
+
+			--paper-card-content: {
+				font-size:28px;
+			};
+			
+			--paper-card-header-text: {
+				text-align:center;
+				font-size:45px;
+				align:center;
+				margin:auto;
+				width:100%;
+ 				font-weight:bold;
+			}; 
+		
+			--paper-card-actions: {
+				@apply(--layout-vertical);
+				@apply(--layout-center);
+				
+	                   
+
+			};
+			--paper-card-header: {
+				@apply(--layout-vertical);
+				@apply(--layout-center);
+			};
+		}
+		
+		paper-icon-button.orange {
+			color:red;
+		}
+		paper-icon-button {
+			height:72px;
+			width:72px;
+			padding-right:10px;
+		}
+
+	</style>
+
+	<iron-swipeable-container swipe-style="horizontal">
+		<paper-card heading="Ice On A String" elevation="3">
+			<div class="card-actions">
+				<div class="learning-light layout horizontal wrap">
+					<h3>Cover Card</h3>
+					<div id="age">
+						<span><paper-icon-button icon="icons:face" id="age"></paper-icon-button></span>
+						<span><h3>3+</h3></span>
+					</div>
+					<paper-icon-button icon="device:signal-cellular-1-bar" id="prep"></paper-icon-button>
+					<img src="../images/photo.jpg" style="max-height:400px; max-width:100%;">
+				</div>
+			</div>
+			<div class="card-actions">
+			<div class="learning-light layout horizontal wrap">
+				<paper-icon-button src="../symbols/brain.svg" id="cognitive" style="opacity:0.25"></paper-icon-button>
+				<paper-icon-button src="../symbols/shape.svg" id="sensory"></paper-icon-button>
+				<paper-icon-button src="../symbols/people.svg" id="emotional"></paper-icon-button>
+			</div>
+			</div>
+			<div class="card-content">
+			<div class="learning-desc">
+				<p>This activity combines the things little ones love: ice, water, and a touch of wonder!</p>
+			</div>
+			</div>
+			<section onclick="clickHandler(event)">
+			<div class="card-actions">
+				<div class="layout horizontal justified">
+					<paper-item id="icon-button-elements" center-center>
+					<paper-icon-button icon="icons:label-outline" data-dialog="Milestones" id="milestones"></paper-icon-button>
+					
+					<paper-icon-button icon="icons:help-outline" data-dialog="DidYouKnow" id="didyouknow"></paper-icon-button>
+					<paper-icon-button icon="icons:lightbulb-outline" data-dialog="Tips" id="tips"></paper-icon-button>
+					<paper-icon-button icon="icons:add-circle-outline" data-dialog="Extension" id="extensions"></paper-icon-button>
+					</paper-item>
+				</div>
+			</div>
+			</section>
+		</paper-card>
+
+		<paper-card heading="Ice on a String" elevation="3">
+			<div class="card-actions">
+				<div class="learning-light layout horizontal wrap">
+					<h3>Materials</h3>
+					<img src="../images/photo.jpg" style="max-width:100%;">
+				</div>
+			</div>
+			<div class="card-actions">
+			<div class="learning-light layout horizontal wrap">
+				<paper-icon-button icon="icons:face" id="age"></paper-icon-button>
+				<paper-icon-button icon="device:signal-cellular-1-bar" id="prep"></paper-icon-button>
+				<paper-icon-button src="../symbols/brain.svg" id="cognitive"></paper-icon-button>
+				<paper-icon-button src="../symbols/shape.svg" id="sensory"></paper-icon-button>
+				<paper-icon-button src="../symbols/people.svg" id="emotional"></paper-icon-button>
+			</div>
+			</div>
+			<div class="card-content">
+			<div class="learning-desc">
+				<ul>
+					<li>Ice cubes</li>
+					<li>Water</li>
+					<li>Salt</li>
+					<li>String</li>
+					<li>Pen</li>
+					<li>Small bowl</li>
+				</ul>
+			</div>
+			</div>
+			<section onclick="clickHandler(event)">
+			<div class="card-actions">
+				<div class="layout horizontal justified">
+					<paper-item id="icon-button-elements" center-center>
+					<paper-icon-button icon="icons:label-outline" data-dialog="Milestones" id="milestones"></paper-icon-button>
+					
+					<paper-icon-button icon="icons:help-outline" data-dialog="DidYouKnow" id="didyouknow"></paper-icon-button>
+					<paper-icon-button icon="icons:lightbulb-outline" data-dialog="Tips" id="tips"></paper-icon-button>
+					<paper-icon-button icon="icons:add-circle-outline" data-dialog="Extension" id="extensions"></paper-icon-button>
+					</paper-item>
+				</div>
+			</div>
+			</section>
+		</paper-card>
+		
+		<paper-card heading="Ice on a string" elevation="3">
+			<div class="card-actions">
+				<div class="learning-light layout horizontal wrap">
+					<h3>Step 1</h3>
+					<img src="../images/IceStep1.jpg" style="max-width:100%;">
+				</div>
+			</div>
+			<div class="card-actions">
+			<div class="learning-light layout horizontal wrap">
+				<paper-icon-button icon="icons:face" id="age"></paper-icon-button>
+				<paper-icon-button icon="device:signal-cellular-1-bar" id="prep"></paper-icon-button>
+				<paper-icon-button src="../symbols/brain.svg" id="cognitive"></paper-icon-button>
+				<paper-icon-button src="../symbols/shape.svg" id="sensory"></paper-icon-button>
+				<paper-icon-button src="../symbols/people.svg" id="emotional"></paper-icon-button>
+			</div>
+			</div>
+			<div class="card-content">
+			<div class="learning-desc">
+				<p>
+				Cut the string so that it is longer than twice the width of the bowl. Half-fill the bowl with water.
+				Add an ice cube to the water.
+				</p>
+			</div>
+			</div>
+			<section onclick="clickHandler(event)">
+			<div class="card-actions">
+				<div class="layout horizontal justified">
+					<paper-item id="icon-button-elements" center-center>
+					<paper-icon-button icon="icons:label-outline" data-dialog="Milestones" id="milestones"></paper-icon-button>
+					
+					<paper-icon-button icon="icons:help-outline" data-dialog="DidYouKnow" id="didyouknow"></paper-icon-button>
+					<paper-icon-button icon="icons:lightbulb-outline" data-dialog="Tips" id="tips"></paper-icon-button>
+					<paper-icon-button icon="icons:add-circle-outline" data-dialog="Extension" id="extensions"></paper-icon-button>
+					</paper-item>
+				</div>
+			</div>
+			</section>
+		</paper-card>
+		
+		<paper-card heading="Ice on a string" elevation="3">
+			<div class="card-actions">
+				<div class="learning-light layout horizontal wrap">
+					<h3>Step 2</h3>
+					<img src="../images/IceStep2.jpg" style="max-width:100%;">
+				</div>
+			</div>
+			<div class="card-actions">
+			<div class="learning-light layout horizontal wrap">
+				<paper-icon-button icon="icons:face" id="age"></paper-icon-button>
+				<paper-icon-button icon="device:signal-cellular-1-bar" id="prep"></paper-icon-button>
+				<paper-icon-button src="../symbols/brain.svg" id="cognitive"></paper-icon-button>
+				<paper-icon-button src="../symbols/shape.svg" id="sensory"></paper-icon-button>
+				<paper-icon-button src="../symbols/people.svg" id="emotional"></paper-icon-button>
+			</div>
+			</div>
+			<div class="card-content">
+			<div class="learning-desc">
+				<p>
+					Ask your child to try and pick up the ice cube using the string. Spoiler Alert!
+					They won't be able to pick it up.
+				</p>
+			</div>
+			</div>
+			<section onclick="clickHandler(event)">
+			<div class="card-actions">
+				<div class="layout horizontal justified">
+					<paper-item id="icon-button-elements" center-center>
+					<paper-icon-button icon="icons:label-outline" data-dialog="Milestones" id="milestones"></paper-icon-button>
+					
+					<paper-icon-button icon="icons:help-outline" data-dialog="DidYouKnow" id="didyouknow"></paper-icon-button>
+					<paper-icon-button icon="icons:lightbulb-outline" data-dialog="Tips" id="tips"></paper-icon-button>
+					<paper-icon-button icon="icons:add-circle-outline" data-dialog="Extension" id="extensions"></paper-icon-button>
+					</paper-item>
+				</div>
+			</div>
+			</section>
+		</paper-card>
+		
+		<paper-card heading="Ice on a string" elevation="3">
+			<div class="card-actions">
+				<div class="learning-light layout horizontal wrap">
+					<h3>Step 3</h3>
+					<img src="../images/IceStep3.jpg" style="max-width:100%;">
+				</div>
+			</div>
+			<div class="card-actions">
+			<div class="learning-light layout horizontal wrap">
+				<paper-icon-button icon="icons:face" id="age"></paper-icon-button>
+				<paper-icon-button icon="device:signal-cellular-1-bar" id="prep"></paper-icon-button>
+				<paper-icon-button src="../symbols/brain.svg" id="cognitive"></paper-icon-button>
+				<paper-icon-button src="../symbols/shape.svg" id="sensory"></paper-icon-button>
+				<paper-icon-button src="../symbols/people.svg" id="emotional"></paper-icon-button>
+			</div>
+			</div>
+			<div class="card-content">
+			<div class="learning-desc">
+				<p>
+					Lay the string across the top of the ice. Now sprinkle some salt on top. Wait for 60 seconds.
+					Talk about what might happen next.
+				</p>
+			</div>
+			</div>
+			<section onclick="clickHandler(event)">
+			<div class="card-actions">
+				<div class="layout horizontal justified">
+					<paper-item id="icon-button-elements" center-center>
+					<paper-icon-button icon="icons:label-outline" data-dialog="Milestones" id="milestones"></paper-icon-button>
+					
+					<paper-icon-button icon="icons:help-outline" data-dialog="DidYouKnow" id="didyouknow"></paper-icon-button>
+					<paper-icon-button icon="icons:lightbulb-outline" data-dialog="Tips" id="tips"></paper-icon-button>
+					<paper-icon-button icon="icons:add-circle-outline" data-dialog="Extension" id="extensions"></paper-icon-button>
+					</paper-item>
+				</div>
+			</div>
+			</section>
+		</paper-card>
+		
+		<paper-card heading="Ice on a string" elevation="3">
+			<div class="card-actions">
+				<div class="learning-light layout horizontal wrap">
+					<h3>Step 4</h3>
+					<img src="../images/IceStep4.jpg" style="max-width:100%;">
+				</div>
+			</div>
+			<div class="card-actions">
+			<div class="learning-light layout horizontal wrap">
+				<paper-icon-button icon="icons:face" id="age"></paper-icon-button>
+				<paper-icon-button icon="device:signal-cellular-1-bar" id="prep"></paper-icon-button>
+				<paper-icon-button src="../symbols/brain.svg" id="cognitive"></paper-icon-button>
+				<paper-icon-button src="../symbols/shape.svg" id="sensory"></paper-icon-button>
+				<paper-icon-button src="../symbols/people.svg" id="emotional"></paper-icon-button>
+			</div>
+			</div>
+			<div class="card-content">
+			<div class="learning-desc">
+				<p>
+					Ask your child to grab both sides of the string and slowly lift. What happens?
+				</p>
+			</div>
+			</div>
+			<section onclick="clickHandler(event)">
+			<div class="card-actions">
+				<div class="layout horizontal justified">
+					<paper-item id="icon-button-elements" center-center>
+					<paper-icon-button icon="icons:label-outline" data-dialog="Milestones" id="milestones"></paper-icon-button>
+					
+					<paper-icon-button icon="icons:help-outline" data-dialog="DidYouKnow" id="didyouknow"></paper-icon-button>
+					<paper-icon-button icon="icons:lightbulb-outline" data-dialog="Tips" id="tips"></paper-icon-button>
+					<paper-icon-button icon="icons:add-circle-outline" data-dialog="Extension" id="extensions"></paper-icon-button>
+					</paper-item>
+				</div>
+			</div>
+			</section>
+		</paper-card>
+		
+		<paper-card heading="Ice on a string" elevation="3">
+			<div class="card-actions">
+				<div class="learning-light layout horizontal wrap">
+					<h3>Step 5</h3>
+					<img src="../images/IceStep5.jpg" style="max-width:100%;">
+				</div>
+			</div>
+			<div class="card-actions">
+			<div class="learning-light layout horizontal wrap">
+				<paper-icon-button icon="icons:face" id="age"></paper-icon-button>
+				<paper-icon-button icon="device:signal-cellular-1-bar" id="prep"></paper-icon-button>
+				<paper-icon-button src="../symbols/brain.svg" id="cognitive"></paper-icon-button>
+				<paper-icon-button src="../symbols/shape.svg" id="sensory"></paper-icon-button>
+				<paper-icon-button src="../symbols/people.svg" id="emotional"></paper-icon-button>
+			</div>
+			</div>
+			<div class="card-content">
+			<div class="learning-desc">
+				<p>
+					Talk about what might have made the ice stick to the string.
+				</p>
+			</div>
+			</div>
+			<section onclick="clickHandler(event)">
+			<div class="card-actions">
+				<div class="layout horizontal justified">
+					<paper-item id="icon-button-elements" center-center>
+					<paper-icon-button icon="icons:label-outline" data-dialog="Milestones" id="milestones"></paper-icon-button>
+					
+					<paper-icon-button icon="icons:help-outline" data-dialog="DidYouKnow" id="didyouknow"></paper-icon-button>
+					<paper-icon-button icon="icons:lightbulb-outline" data-dialog="Tips" id="tips"></paper-icon-button>
+					<paper-icon-button icon="icons:add-circle-outline" data-dialog="Extension" id="extensions"></paper-icon-button>
+					</paper-item>
+				</div>
+			</div>
+			</section>
+		</paper-card>
+	
+	</iron-swipeable-container>
+	
+	<paper-button style="padding-top:50px; margin:auto; width:100%;">
+        <a href="../activities.html">Click here to do more fun activities!</a>    
+    </paper-button>
+	
+	<!--Modal Content-->
+	
+	<paper-dialog id="Milestones" modal>
+		<h2>Milestones</h2>
+		<paper-checkbox><strong>Executive Function</strong></paper-checkbox>
+		<p>Follow a simple one-part and two-part instructions - e.g. Cut the string, then
+		lay it on the ice and sprinke with salt.
+		</p>
+		<paper-checkbox><strong>Motor Skill Development</strong></paper-checkbox>
+		<p>Use a pince grip (forefinger and thumb) to transfer small objects (ice cube, salt)
+		from one location to another
+		</p>
+		<paper-checkbox><strong>Cognitive Development</strong></paper-checkbox>
+		<p>Pose questions, form simple hypothesis, and make statements about what they observe</p>
+		<div class="buttons">
+		<paper-button dialog-confirm autofocus>Tap me to close</paper-button>
+		</div>
+	</paper-dialog>
+	<!--
+	<paper-dialog id="Domains" modal>
+		<h2>Domain Skills</h2>
+		<p>Fun, tactile activities like this can generate an interest in science and how things work,
+		and help develop bilateral coordination.
+		</p>
+		<p><strong>Fine motor skills</strong></p>
+		<ul>
+		<li>Holding the string</li>
+		<li>Picking up the slippery ice</li>
+		<li>Sprinkling the salt</li>
+		</ul>
+		<p><strong>Cognitive</strong></p>
+		<ul>
+		<li>Thinking about the cause and effect</li>
+		<li>Forming and testing a hypothesis</li>
+		<li>Coming to an observable conclusion</li>
+		</ul>
+		<div class="buttons">
+		<paper-button dialog-confirm autofocus>Tap me to close</paper-button>
+		</div>
+	</paper-dialog>
+	-->
+	<paper-dialog id="Extension" modal>
+		<h2>Extend it</h2>
+		<ul>
+		<li>Use fine and coarse salt and compare the results</li>
+		<li>Use different sized ice cubes</li>
+		<li>Use strings of different thickness - Does it make a difference
+			how easily the string can be lifted?
+		</li>
+		</ul>
+		<div class="buttons">
+		<paper-button dialog-confirm autofocus>Tap me to close</paper-button>
+		</div>
+	</paper-dialog>
+
+	<paper-dialog id="DidYouKnow" modal>
+		<h2>Did you Know?</h2>
+		<p><strong>The science behind the activity</strong></p>
+		<p>Salt sprinkled on ice causes it to melt. Water usually freezes at 0 degrees Celsius, however the salt 
+		lowers the freezing point below zero. In order for the ice to melt, it has to absorb heat.
+		The heat that is absorbs comes from the water near the ice cube.
+		Some of this water becomes so cold that it refreezes and the string becomes trapped, allowing you to
+		lif the ice cube out of the water.
+		</p>
+		<div class="buttons">
+		<paper-button dialog-confirm autofocus>Tap me to close</paper-button>
+		</div>
+	</paper-dialog>
+
+	<paper-dialog id="Tips" modal>
+		<h2>Tips</h2>
+		<ul>
+		<li>Avoid giving the children the official answer</li>
+		<li>Prompt them to observe what happens to the ice when it comes into contact with the salt, what happens
+			to the string whn it comes into contact with the ice and salt.
+		</li>
+		<li>Encourage them to hypothesise (come up with a probable explanation) for what they observe</li>
+		<li>If you don't know, write down the question to research together</li>
+		</ul>
+		<div class="buttons">
+		<paper-button dialog-confirm autofocus>Tap me to close</paper-button>
+		</div>
+	</paper-dialog>
+
+	<!--Tooltips-->
+
+	<paper-tooltip for="age">Age</paper-tooltip>
+	<paper-tooltip for="prep">Prep time</paper-tooltip>
+	<paper-tooltip for="cognitive">Cognitive Domain</paper-tooltip>
+	<paper-tooltip for="sensory">Sensory Motor Domain</paper-tooltip>
+	<paper-tooltip for="emotional">Social Emotional Domain</paper-tooltip>
+	<paper-tooltip for="milestones">Milestones</paper-tooltip>
+	<paper-tooltip for="domains">Domains</paper-tooltip>
+	<paper-tooltip for="tips">Tips</paper-tooltip>
+	<paper-tooltip for="extensions">Extensions</paper-tooltip>
+	<paper-tooltip for="didyouknow">Did You Know?</paper-tooltip>
+
+	<script>
+		function clickHandler(e) {
+		var button = e.target;
+		while (!button.hasAttribute('data-dialog') && button !== document.body) {
+			button = button.parentElement;
+		}
+		if (!button.hasAttribute('data-dialog')) {
+			return;
+		}
+		var id = button.getAttribute('data-dialog');
+		var dialog = document.getElementById(id);
+		if (dialog) {
+			dialog.open();
+		}
+		}
+	</script>
+  </body>
+</html>
