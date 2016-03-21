@@ -182,3 +182,9 @@ paper-dialog paper-checkbox {
     height:84px;
     width:84px;
 }
+
+        
+paper-icon-button.small {
+    height:42px;
+    width:42px;
+}

@@ -9,24 +9,26 @@
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
 <script src="js/jquery-2.2.1.min.js" type="text/javascript"></script>
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+<link href="styles/main.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
 </head>
 <body>
 	<header>
-		<div class="container-fluid">
-		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-			<a href="/"><paper-icon-button src="symbols/home.svg"></paper-icon-button></a>
-		</div>
-		   
-		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-5 pull-right right-header">
-			<a href="#"><paper-icon-button src="symbols/search.svg"></paper-icon-button></a>
-			<a href="#"><paper-icon-button src="symbols/user.svg"></paper-icon-button></a>
-		</div>
-			<div class="clearfix"></div>
-			<div class="col-lg-12 col-md-12 text-center">
-				<h2 class="heading">Let's Learn</h2>
-			</div>
-		</div>
+        <div class="pure-g">
+            <div class="pure-u-7-8">
+                <a href="/"><paper-icon-button src="symbols/home.svg" class="small"></paper-icon-button></a>
+            </div>
+            
+            <div class="pure-u-1-24" style="text-align:right">
+                <a href="#"><paper-icon-button src="symbols/search.svg" class="small"></paper-icon-button></a>
+            </div>
+            <div class="pure-u-1-24" style="text-align:right">
+                <a href="#"><paper-icon-button src="symbols/user.svg" class="small"></paper-icon-button></a>
+            </div>
+        </div>
 	</header>
+    <h2 style="text-align:center">Let's Learn</h2>
 	<div class="let-learn">        
 		<div>
 			<a class="box" style="background:#9dd9a3" href="/">All Lessons</a>
