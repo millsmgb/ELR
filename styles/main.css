@@ -177,3 +177,8 @@ paper-dialog paper-checkbox {
     top:5px;
     left:5px;
 }
+
+.home-button paper-icon-button {
+    height:84px;
+    width:84px;
+}

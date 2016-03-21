@@ -30,6 +30,10 @@
 
   </head>
   <body>
+      
+    <div class="home-button">
+        <a href="/"><paper-icon-button src="../symbols/home.svg"></paper-icon-button></a>
+    </div>
 	  
 	<!--Activity Cards-->
 	
@@ -100,8 +104,8 @@
 										<p style="font-size:14px">Cognitive</p>
 									</div>
 									<div class="pure-u-1-3">
-										<paper-icon-button src="../symbols/shape.svg" data-dialog="Sensory" class="inactive"></paper-icon-button>
-                                        <p style="font-size:14px; opacity:0.25;">Sensory - Motor</p>
+										<paper-icon-button src="../symbols/shape.svg" data-dialog="Sensory"></paper-icon-button>
+                                        <p style="font-size:14px; ">Sensory - Motor</p>
 									</div>
 									<div class="pure-u-1-3">
 										<paper-icon-button src="../symbols/heartsInHand.svg" data-dialog="Emotional" class="inactive"></paper-icon-button>
@@ -180,8 +184,8 @@
 										<p style="font-size:14px">Cognitive</p>
 									</div>
 									<div class="pure-u-1-3">
-										<paper-icon-button src="../symbols/shape.svg" data-dialog="Sensory" class="inactive"></paper-icon-button>
-                                        <p style="font-size:14px; opacity:0.25;">Sensory - Motor</p>
+										<paper-icon-button src="../symbols/shape.svg" data-dialog="Sensory"></paper-icon-button>
+                                        <p style="font-size:14px; ">Sensory - Motor</p>
 									</div>
 									<div class="pure-u-1-3">
 										<paper-icon-button src="../symbols/heartsInHand.svg" data-dialog="Emotional" class="inactive"></paper-icon-button>
@@ -268,8 +272,8 @@
 										<p style="font-size:14px">Cognitive</p>
 									</div>
 									<div class="pure-u-1-3">
-										<paper-icon-button src="../symbols/shape.svg" data-dialog="Sensory" class="inactive"></paper-icon-button>
-                                        <p style="font-size:14px; opacity:0.25;">Sensory - Motor</p>
+										<paper-icon-button src="../symbols/shape.svg" data-dialog="Sensory"></paper-icon-button>
+                                        <p style="font-size:14px; ">Sensory - Motor</p>
 									</div>
 									<div class="pure-u-1-3">
 										<paper-icon-button src="../symbols/heartsInHand.svg" data-dialog="Emotional" class="inactive"></paper-icon-button>
@@ -348,8 +352,8 @@
 										<p style="font-size:14px">Cognitive</p>
 									</div>
 									<div class="pure-u-1-3">
-										<paper-icon-button src="../symbols/shape.svg" data-dialog="Sensory" class="inactive"></paper-icon-button>
-                                        <p style="font-size:14px; opacity:0.25;">Sensory - Motor</p>
+										<paper-icon-button src="../symbols/shape.svg" data-dialog="Sensory"></paper-icon-button>
+                                        <p style="font-size:14px; ">Sensory - Motor</p>
 									</div>
 									<div class="pure-u-1-3">
 										<paper-icon-button src="../symbols/heartsInHand.svg" data-dialog="Emotional" class="inactive"></paper-icon-button>
@@ -428,8 +432,8 @@
 										<p style="font-size:14px">Cognitive</p>
 									</div>
 									<div class="pure-u-1-3">
-										<paper-icon-button src="../symbols/shape.svg" data-dialog="Sensory" class="inactive"></paper-icon-button>
-                                        <p style="font-size:14px; opacity:0.25;">Sensory - Motor</p>
+										<paper-icon-button src="../symbols/shape.svg" data-dialog="Sensory"></paper-icon-button>
+                                        <p style="font-size:14px; ">Sensory - Motor</p>
 									</div>
 									<div class="pure-u-1-3">
 										<paper-icon-button src="../symbols/heartsInHand.svg" data-dialog="Emotional" class="inactive"></paper-icon-button>
@@ -514,16 +518,16 @@
 	
 	<paper-dialog id="Milestones" modal>
 		<h2>Milestones</h2>
-		<paper-checkbox><strong>Literacy</strong></paper-checkbox>
-		<p>Form letters by tracing
-		</p>
-		<paper-checkbox><strong>Motor Skills Development</strong></paper-checkbox>
-		<p>Fine Motor: Using a pincer grip (with
+		<p><strong>Literacy</strong></p>
+		<paper-checkbox>Form letters by tracing
+		</paper-checkbox>
+		<p><strong>Motor Skills Development</strong></p>
+		<paper-checkbox>Fine Motor: Using a pincer grip (with
             forefinger and thumb) to hold their brush
-		</p>
-		<paper-checkbox><strong>Cognitive Development</strong></paper-checkbox>
-		<p>Numeracy: Form numbers by tracing 
-		</p>
+		</paper-checkbox>
+		<p><strong>Cognitive Development</strong></p>
+		<paper-checkbox>Numeracy: Form numbers by tracing 
+		</paper-checkbox>
 		<div class="buttons">
 		<paper-button dialog-confirm autofocus>Tap me to close</paper-button>
 		</div>
@@ -538,6 +542,18 @@
 		</ul>
 		<div class="buttons">
 		<paper-button dialog-confirm autofocus>Tap me to close</paper-button>
+		</div>
+	</paper-dialog>
+
+	<paper-dialog id="Sensory" modal>
+		<h2>Sensory - Motor</h2>
+		<ul>
+			<li>Holding the brush</li>
+			<li>Painting</li>
+			<li>Writing the letters and numbers</li>
+		</ul>
+		<div class="buttons">
+			<paper-button dialog-confirm autofocus>Tap me to close</paper-button>
 		</div>
 	</paper-dialog>
 
