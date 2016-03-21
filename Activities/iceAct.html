@@ -34,11 +34,12 @@
   <body>
 	  
 	<!--Activity Cards-->
-    <header>
-        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-            <a href="/"><paper-icon-button src="../symbols/home.svg"></paper-icon-button></a>
 
-    </header>
+        <div class="home-button">
+            <a href="/"><paper-icon-button src="../symbols/home.svg"></paper-icon-button></a>
+        </div>
+
+
 	 
 	
 	<style is="custom-style" include="iron-flexiron-flex-alignment">
@@ -70,7 +71,7 @@
 
 	</style>
 
-	<div id="draggable">
+	<div id="draggable" style="z-index:-1;">
 		<div class="dragend-page">
 			<div id="card1">
 				<paper-card elevation="3">

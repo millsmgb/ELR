@@ -170,3 +170,10 @@ paper-dialog paper-checkbox {
     height:50px;
 
 }
+
+.home-button {
+    z-index:5;
+    position:absolute;
+    top:5px;
+    left:5px;
+}
