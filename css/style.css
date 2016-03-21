@@ -8,10 +8,8 @@ and open the template in the editor.
     Author     : Anup Bhardwaj
 */
 body{font-family:Open Sans !important;}
-header{padding:20px 0px;}
 .let-learn a{color:#fff; margin:0px; font-size: 22px; font-weight: bold;}
 .let-learn a:hover, .let-learn a:focus{color:#fff; text-decoration: none; outline: none;}
-.right-header{float:right; text-align: right;}
 .heading{color:#5f5f5f; margin:0px;font-weight: bold;}
 .right-header a{padding:0px 10px; display:inine-block; vertical-align:middle;}
 .box{ padding:40px 0px 35px; text-align: center; overflow: hidden;width:100%;display: block; }
